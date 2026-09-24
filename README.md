@@ -12,7 +12,7 @@ table that never reads a single word scores MAP@3 = 0.8393.
 
 ---
 
-## Data
+## Data##
 
 - **Source:** Kaggle, *MAP — Charting Student Math Misunderstandings*. Hosted by
   Vanderbilt University, The Learning Agency and Kaggle; data provided by
