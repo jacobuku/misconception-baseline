@@ -1,0 +1,6088 @@
+{
+  "config": {
+    "model": "claude-sonnet-4-6",
+    "effort": "medium",
+    "thinking": "adaptive",
+    "n_eval": 200,
+    "seed": 42,
+    "ambiguity_threshold": 0.8,
+    "examples_per_label": 2,
+    "concurrency": 10,
+    "metric": "MAP@3"
+  },
+  "subset": {
+    "cells_total": 60,
+    "cells_ambiguous": 50,
+    "rows_in_ambiguous_cells": 31115,
+    "pct_of_train": 84.79
+  },
+  "scores": {
+    "baseline_C": {
+      "map@3": 0.8142,
+      "top1_acc": 0.66
+    },
+    "llm": {
+      "map@3": 0.8758,
+      "top1_acc": 0.78,
+      "top3_hit_rate": 0.985
+    },
+    "delta_map@3": 0.0617,
+    "rows_llm_better": 46,
+    "rows_llm_worse": 23,
+    "rows_tied": 131
+  },
+  "cost": {
+    "elapsed_sec": 128.8,
+    "api_calls": 200,
+    "errors": 0,
+    "input_tokens": 194834,
+    "output_tokens": 18125,
+    "usd_total": 0.8564,
+    "usd_per_row": 0.00428
+  },
+  "predictions": [
+    {
+      "row_id": 408,
+      "QuestionId": 31772,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.5,
+      "delta": -0.5,
+      "error": null
+    },
+    {
+      "row_id": 32358,
+      "QuestionId": 89443,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Positive",
+        "False_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Positive",
+        "False_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 4652,
+      "QuestionId": 31772,
+      "truth": "False_Misconception:Incomplete",
+      "candidates": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "llm_pred": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 32989,
+      "QuestionId": 91695,
+      "truth": "False_Misconception:Wrong_term",
+      "candidates": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 30973,
+      "QuestionId": 89443,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking",
+        "True_Misconception:Positive"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "True_Misconception:Positive",
+        "True_Misconception:Tacking",
+        "True_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Misconception:Positive",
+        "True_Misconception:Tacking",
+        "True_Neither:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.0,
+      "delta": -1.0,
+      "error": null
+    },
+    {
+      "row_id": 2208,
+      "QuestionId": 31772,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 32823,
+      "QuestionId": 91695,
+      "truth": "False_Misconception:Firstterm",
+      "candidates": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "baseline_C_ap": 0.3333,
+      "llm_ap": 0.3333,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 13774,
+      "QuestionId": 31778,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant",
+        "True_Misconception:Additive",
+        "False_Neither:NA"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 12490,
+      "QuestionId": 31778,
+      "truth": "False_Misconception:Additive",
+      "candidates": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 13790,
+      "QuestionId": 31778,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant",
+        "True_Misconception:Additive",
+        "False_Neither:NA"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 34289,
+      "QuestionId": 91695,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 210,
+      "QuestionId": 31772,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 23250,
+      "QuestionId": 33471,
+      "truth": "False_Misconception:Wrong_fraction",
+      "candidates": [
+        "False_Misconception:Wrong_fraction",
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Incomplete"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Wrong_fraction",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Wrong_fraction",
+        "False_Neither:NA",
+        "False_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Wrong_fraction",
+        "False_Neither:NA",
+        "False_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 17296,
+      "QuestionId": 32833,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication",
+        "True_Misconception:Inversion"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "llm_pred": [
+        "True_Misconception:Inversion",
+        "True_Neither:NA",
+        "True_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Misconception:Inversion",
+        "True_Neither:NA",
+        "True_Correct:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.3333,
+      "delta": -0.6667,
+      "error": null
+    },
+    {
+      "row_id": 36179,
+      "QuestionId": 109465,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 30265,
+      "QuestionId": 89443,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking",
+        "True_Misconception:Positive"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "True_Misconception:Tacking",
+        "True_Neither:NA",
+        "True_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Misconception:Tacking",
+        "True_Neither:NA",
+        "True_Correct:NA"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 19575,
+      "QuestionId": 32833,
+      "truth": "False_Misconception:Inversion",
+      "candidates": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication"
+      ],
+      "llm_pred": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 12562,
+      "QuestionId": 31778,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant",
+        "True_Misconception:Additive",
+        "False_Neither:NA"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 6132,
+      "QuestionId": 31774,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend",
+        "True_Misconception:Mult",
+        "True_Misconception:FlipChange"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Mult"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Mult"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 21385,
+      "QuestionId": 32835,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger",
+        "True_Misconception:Longer_is_bigger",
+        "True_Misconception:Whole_numbers_larger"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 457,
+      "QuestionId": 31772,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 5464,
+      "QuestionId": 31774,
+      "truth": "False_Misconception:Mult",
+      "candidates": [
+        "False_Misconception:Mult",
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend",
+        "False_Misconception:FlipChange",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Mult",
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "False_Misconception:Mult",
+        "False_Misconception:SwapDividend",
+        "False_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Mult",
+        "False_Misconception:SwapDividend",
+        "False_Neither:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 26818,
+      "QuestionId": 33474,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Division",
+        "True_Misconception:Subtraction"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Division"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Division"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Division"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 13653,
+      "QuestionId": 31778,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant",
+        "True_Misconception:Additive",
+        "False_Neither:NA"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 21790,
+      "QuestionId": 32835,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger",
+        "True_Misconception:Longer_is_bigger",
+        "True_Misconception:Whole_numbers_larger"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 31796,
+      "QuestionId": 89443,
+      "truth": "False_Misconception:Tacking",
+      "candidates": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "False_Misconception:Positive",
+        "False_Misconception:Tacking",
+        "False_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Positive",
+        "False_Misconception:Tacking",
+        "False_Neither:NA"
+      ],
+      "baseline_C_ap": 0.3333,
+      "llm_ap": 0.5,
+      "delta": 0.1667,
+      "error": null
+    },
+    {
+      "row_id": 18388,
+      "QuestionId": 32833,
+      "truth": "False_Misconception:Duplication",
+      "candidates": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Misconception:Inversion",
+        "False_Correct:NA",
+        "False_Misconception:Wrong_Operation"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Misconception:Inversion"
+      ],
+      "llm_pred": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Misconception:Inversion"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Misconception:Inversion"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 33911,
+      "QuestionId": 91695,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.5,
+      "delta": -0.5,
+      "error": null
+    },
+    {
+      "row_id": 16273,
+      "QuestionId": 32829,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Adding_terms",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Adding_terms",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Adding_terms",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Adding_terms",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 16637,
+      "QuestionId": 32833,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication",
+        "True_Misconception:Inversion"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 26052,
+      "QuestionId": 33472,
+      "truth": "False_Misconception:Adding_across",
+      "candidates": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 25285,
+      "QuestionId": 33472,
+      "truth": "False_Misconception:Incorrect_equivalent_fraction_addition",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Denominator-only_change",
+        "False_Misconception:Incorrect_equivalent_fraction_addition"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "False_Misconception:Incorrect_equivalent_fraction_addition",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Incorrect_equivalent_fraction_addition",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 0.0,
+      "llm_ap": 1.0,
+      "delta": 1.0,
+      "error": null
+    },
+    {
+      "row_id": 20747,
+      "QuestionId": 32835,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger",
+        "True_Misconception:Longer_is_bigger",
+        "True_Misconception:Whole_numbers_larger"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.5,
+      "delta": -0.5,
+      "error": null
+    },
+    {
+      "row_id": 1118,
+      "QuestionId": 31772,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 4665,
+      "QuestionId": 31772,
+      "truth": "False_Misconception:Incomplete",
+      "candidates": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "llm_pred": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 17748,
+      "QuestionId": 32833,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication",
+        "True_Misconception:Inversion"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Inversion"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Inversion"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 27172,
+      "QuestionId": 33474,
+      "truth": "False_Correct:NA",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:Division",
+        "False_Misconception:Subtraction",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Division",
+        "False_Misconception:Subtraction"
+      ],
+      "llm_pred": [
+        "False_Correct:NA",
+        "False_Neither:NA",
+        "False_Misconception:Division"
+      ],
+      "llm_raw_ranking": [
+        "False_Correct:NA",
+        "False_Neither:NA",
+        "False_Misconception:Division"
+      ],
+      "baseline_C_ap": 0.0,
+      "llm_ap": 1.0,
+      "delta": 1.0,
+      "error": null
+    },
+    {
+      "row_id": 24669,
+      "QuestionId": 33472,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change",
+        "True_Misconception:Incorrect_equivalent_fraction_addition",
+        "True_Misconception:Adding_across"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 32521,
+      "QuestionId": 91695,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Wrong_term",
+        "False_Misconception:Firstterm"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Wrong_term",
+        "False_Misconception:Firstterm"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 20036,
+      "QuestionId": 32835,
+      "truth": "False_Misconception:Whole_numbers_larger",
+      "candidates": [
+        "False_Misconception:Whole_numbers_larger",
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Shorter_is_bigger",
+        "False_Misconception:Longer_is_bigger",
+        "False_Misconception:Ignores_zeroes"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Whole_numbers_larger",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Whole_numbers_larger",
+        "False_Neither:NA",
+        "False_Misconception:Shorter_is_bigger"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Whole_numbers_larger",
+        "False_Neither:NA",
+        "False_Misconception:Shorter_is_bigger"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 27738,
+      "QuestionId": 33474,
+      "truth": "False_Misconception:Subtraction",
+      "candidates": [
+        "False_Misconception:Subtraction",
+        "False_Neither:NA",
+        "False_Misconception:Division",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Subtraction",
+        "False_Neither:NA",
+        "False_Misconception:Division"
+      ],
+      "llm_pred": [
+        "False_Misconception:Subtraction",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Subtraction",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 20850,
+      "QuestionId": 32835,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger",
+        "True_Misconception:Longer_is_bigger",
+        "True_Misconception:Whole_numbers_larger"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 4531,
+      "QuestionId": 31772,
+      "truth": "False_Misconception:Incomplete",
+      "candidates": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "llm_pred": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 1433,
+      "QuestionId": 31772,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 20987,
+      "QuestionId": 32835,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger",
+        "True_Misconception:Longer_is_bigger",
+        "True_Misconception:Whole_numbers_larger"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 30190,
+      "QuestionId": 89443,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking",
+        "True_Misconception:Positive"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 17786,
+      "QuestionId": 32833,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication",
+        "True_Misconception:Inversion"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Duplication"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Duplication"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.5,
+      "delta": -0.5,
+      "error": null
+    },
+    {
+      "row_id": 13738,
+      "QuestionId": 31778,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant",
+        "True_Misconception:Additive",
+        "False_Neither:NA"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "True_Misconception:Irrelevant",
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Misconception:Irrelevant",
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.5,
+      "delta": -0.5,
+      "error": null
+    },
+    {
+      "row_id": 22996,
+      "QuestionId": 33471,
+      "truth": "False_Misconception:Wrong_fraction",
+      "candidates": [
+        "False_Misconception:Wrong_fraction",
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Incomplete"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Wrong_fraction",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Wrong_fraction",
+        "False_Neither:NA",
+        "False_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Wrong_fraction",
+        "False_Neither:NA",
+        "False_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 26309,
+      "QuestionId": 33472,
+      "truth": "False_Misconception:Adding_across",
+      "candidates": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 1668,
+      "QuestionId": 31772,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 32418,
+      "QuestionId": 91695,
+      "truth": "False_Misconception:Wrong_term",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:Wrong_term",
+        "False_Correct:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Wrong_term",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 2034,
+      "QuestionId": 31772,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 26606,
+      "QuestionId": 33474,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Division",
+        "True_Misconception:Subtraction"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Division"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Division"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Division"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 35822,
+      "QuestionId": 109465,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 33768,
+      "QuestionId": 91695,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 6573,
+      "QuestionId": 31774,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend",
+        "True_Misconception:Mult",
+        "True_Misconception:FlipChange"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:FlipChange"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:FlipChange"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 31139,
+      "QuestionId": 89443,
+      "truth": "True_Misconception:Tacking",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking",
+        "True_Misconception:Positive"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "True_Misconception:Tacking",
+        "True_Neither:NA",
+        "True_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Misconception:Tacking",
+        "True_Neither:NA",
+        "True_Correct:NA"
+      ],
+      "baseline_C_ap": 0.3333,
+      "llm_ap": 1.0,
+      "delta": 0.6667,
+      "error": null
+    },
+    {
+      "row_id": 26752,
+      "QuestionId": 33474,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Division",
+        "True_Misconception:Subtraction"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Division"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Division"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Division"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 491,
+      "QuestionId": 31772,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 19130,
+      "QuestionId": 32833,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Misconception:Inversion",
+        "False_Correct:NA",
+        "False_Misconception:Wrong_Operation"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Misconception:Inversion"
+      ],
+      "llm_pred": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Misconception:Wrong_Operation"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Misconception:Wrong_Operation"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 27359,
+      "QuestionId": 33474,
+      "truth": "False_Misconception:Subtraction",
+      "candidates": [
+        "False_Misconception:Subtraction",
+        "False_Neither:NA",
+        "False_Misconception:Division",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Subtraction",
+        "False_Neither:NA",
+        "False_Misconception:Division"
+      ],
+      "llm_pred": [
+        "False_Misconception:Subtraction",
+        "False_Neither:NA",
+        "False_Misconception:Division"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Subtraction",
+        "False_Neither:NA",
+        "False_Misconception:Division"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 20092,
+      "QuestionId": 32835,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Whole_numbers_larger",
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Shorter_is_bigger",
+        "False_Misconception:Longer_is_bigger",
+        "False_Misconception:Ignores_zeroes"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Whole_numbers_larger",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Whole_numbers_larger",
+        "False_Neither:NA",
+        "False_Misconception:Shorter_is_bigger"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Whole_numbers_larger",
+        "False_Neither:NA",
+        "False_Misconception:Shorter_is_bigger"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 24617,
+      "QuestionId": 33472,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change",
+        "True_Misconception:Incorrect_equivalent_fraction_addition",
+        "True_Misconception:Adding_across"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 20209,
+      "QuestionId": 32835,
+      "truth": "False_Misconception:Longer_is_bigger",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:Longer_is_bigger",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Longer_is_bigger",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Longer_is_bigger",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Longer_is_bigger",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 33086,
+      "QuestionId": 91695,
+      "truth": "False_Misconception:Wrong_term",
+      "candidates": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 6322,
+      "QuestionId": 31774,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend",
+        "True_Misconception:Mult",
+        "True_Misconception:FlipChange"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Misconception:Mult",
+        "True_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Misconception:Mult",
+        "True_Neither:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 32935,
+      "QuestionId": 91695,
+      "truth": "False_Misconception:Wrong_term",
+      "candidates": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 24944,
+      "QuestionId": 33472,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change",
+        "True_Misconception:Incorrect_equivalent_fraction_addition",
+        "True_Misconception:Adding_across"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 16537,
+      "QuestionId": 32829,
+      "truth": "False_Misconception:Inverse_operation",
+      "candidates": [
+        "False_Misconception:Inverse_operation",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Inverse_operation",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Inverse_operation",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Inverse_operation",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 20732,
+      "QuestionId": 32835,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger",
+        "True_Misconception:Longer_is_bigger",
+        "True_Misconception:Whole_numbers_larger"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_pred": [
+        "True_Misconception:Shorter_is_bigger",
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Misconception:Shorter_is_bigger",
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.3333,
+      "delta": -0.1667,
+      "error": null
+    },
+    {
+      "row_id": 21974,
+      "QuestionId": 32835,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger",
+        "True_Misconception:Longer_is_bigger",
+        "True_Misconception:Whole_numbers_larger"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_pred": [
+        "True_Misconception:Shorter_is_bigger",
+        "True_Neither:NA",
+        "True_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Misconception:Shorter_is_bigger",
+        "True_Neither:NA",
+        "True_Correct:NA"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 14316,
+      "QuestionId": 31778,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:WNB",
+        "False_Misconception:Irrelevant",
+        "True_Correct:NA",
+        "False_Correct:NA",
+        "True_Neither:NA",
+        "False_Misconception:Additive",
+        "True_Misconception:Irrelevant"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:WNB",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:WNB",
+        "False_Misconception:Additive"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:WNB",
+        "False_Misconception:Additive"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 96,
+      "QuestionId": 31772,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 23691,
+      "QuestionId": 33472,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change",
+        "True_Misconception:Incorrect_equivalent_fraction_addition",
+        "True_Misconception:Adding_across"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 30204,
+      "QuestionId": 89443,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking",
+        "True_Misconception:Positive"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 18708,
+      "QuestionId": 32833,
+      "truth": "False_Misconception:Duplication",
+      "candidates": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Misconception:Inversion",
+        "False_Correct:NA",
+        "False_Misconception:Wrong_Operation"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Misconception:Inversion"
+      ],
+      "llm_pred": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 34319,
+      "QuestionId": 91695,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 26071,
+      "QuestionId": 33472,
+      "truth": "False_Misconception:Adding_across",
+      "candidates": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 30401,
+      "QuestionId": 89443,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking",
+        "True_Misconception:Positive"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 5246,
+      "QuestionId": 31774,
+      "truth": "False_Misconception:Mult",
+      "candidates": [
+        "False_Misconception:Mult",
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend",
+        "False_Misconception:FlipChange",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Mult",
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "False_Misconception:FlipChange",
+        "False_Misconception:SwapDividend",
+        "False_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:FlipChange",
+        "False_Misconception:SwapDividend",
+        "False_Neither:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.0,
+      "delta": -1.0,
+      "error": null
+    },
+    {
+      "row_id": 11428,
+      "QuestionId": 31778,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant",
+        "False_Misconception:Additive"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant",
+        "False_Misconception:Additive"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 16274,
+      "QuestionId": 32829,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Adding_terms",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Adding_terms",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Adding_terms",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Adding_terms",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 17290,
+      "QuestionId": 32833,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication",
+        "True_Misconception:Inversion"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 5018,
+      "QuestionId": 31774,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Mult",
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend",
+        "False_Misconception:FlipChange",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Mult",
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "False_Misconception:FlipChange",
+        "False_Misconception:SwapDividend",
+        "False_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:FlipChange",
+        "False_Misconception:SwapDividend",
+        "False_Neither:NA"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.3333,
+      "delta": -0.1667,
+      "error": null
+    },
+    {
+      "row_id": 30592,
+      "QuestionId": 89443,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking",
+        "True_Misconception:Positive"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 33254,
+      "QuestionId": 91695,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 30477,
+      "QuestionId": 89443,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking",
+        "True_Misconception:Positive"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 1318,
+      "QuestionId": 31772,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 25908,
+      "QuestionId": 33472,
+      "truth": "False_Misconception:Adding_across",
+      "candidates": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 27681,
+      "QuestionId": 33474,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Subtraction",
+        "False_Neither:NA",
+        "False_Misconception:Division",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Subtraction",
+        "False_Neither:NA",
+        "False_Misconception:Division"
+      ],
+      "llm_pred": [
+        "False_Misconception:Subtraction",
+        "False_Neither:NA",
+        "False_Misconception:Division"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Subtraction",
+        "False_Neither:NA",
+        "False_Misconception:Division"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 33615,
+      "QuestionId": 91695,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 31437,
+      "QuestionId": 89443,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking",
+        "True_Misconception:Positive"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 11827,
+      "QuestionId": 31778,
+      "truth": "False_Misconception:Additive",
+      "candidates": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 30016,
+      "QuestionId": 89443,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Misconception:Positive"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Misconception:Positive"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Misconception:Positive"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Misconception:Positive"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 16416,
+      "QuestionId": 32829,
+      "truth": "False_Misconception:Not_variable",
+      "candidates": [
+        "False_Misconception:Not_variable",
+        "False_Neither:NA",
+        "False_Misconception:Adding_terms",
+        "False_Misconception:Inverse_operation"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Not_variable",
+        "False_Neither:NA",
+        "False_Misconception:Adding_terms"
+      ],
+      "llm_pred": [
+        "False_Misconception:Not_variable",
+        "False_Neither:NA",
+        "False_Misconception:Adding_terms"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Not_variable",
+        "False_Neither:NA",
+        "False_Misconception:Adding_terms"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 10882,
+      "QuestionId": 31778,
+      "truth": "False_Misconception:Irrelevant",
+      "candidates": [
+        "False_Misconception:Irrelevant",
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Additive",
+        "False_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Irrelevant",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Irrelevant",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Irrelevant",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 25517,
+      "QuestionId": 33472,
+      "truth": "False_Misconception:Adding_across",
+      "candidates": [
+        "False_Misconception:Denominator-only_change",
+        "False_Neither:NA",
+        "False_Misconception:Adding_across",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Denominator-only_change",
+        "False_Neither:NA",
+        "False_Misconception:Adding_across"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Adding_across",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Adding_across",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "baseline_C_ap": 0.3333,
+      "llm_ap": 0.5,
+      "delta": 0.1667,
+      "error": null
+    },
+    {
+      "row_id": 31508,
+      "QuestionId": 89443,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "False_Misconception:Positive",
+        "False_Misconception:Tacking",
+        "False_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Positive",
+        "False_Misconception:Tacking",
+        "False_Neither:NA"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.3333,
+      "delta": -0.1667,
+      "error": null
+    },
+    {
+      "row_id": 14170,
+      "QuestionId": 31778,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant",
+        "True_Misconception:Additive",
+        "False_Neither:NA"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Misconception:Irrelevant",
+        "True_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Misconception:Irrelevant",
+        "True_Neither:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 20273,
+      "QuestionId": 32835,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:Ignores_zeroes",
+        "False_Correct:NA",
+        "False_Misconception:Longer_is_bigger",
+        "False_Misconception:Shorter_is_bigger"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Ignores_zeroes",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Ignores_zeroes",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Ignores_zeroes",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.5,
+      "delta": -0.5,
+      "error": null
+    },
+    {
+      "row_id": 20096,
+      "QuestionId": 32835,
+      "truth": "False_Misconception:Shorter_is_bigger",
+      "candidates": [
+        "False_Misconception:Whole_numbers_larger",
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Shorter_is_bigger",
+        "False_Misconception:Longer_is_bigger",
+        "False_Misconception:Ignores_zeroes"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Whole_numbers_larger",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Shorter_is_bigger",
+        "False_Misconception:Longer_is_bigger",
+        "False_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Shorter_is_bigger",
+        "False_Misconception:Longer_is_bigger",
+        "False_Neither:NA"
+      ],
+      "baseline_C_ap": 0.0,
+      "llm_ap": 1.0,
+      "delta": 1.0,
+      "error": null
+    },
+    {
+      "row_id": 1731,
+      "QuestionId": 31772,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 5650,
+      "QuestionId": 31774,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend",
+        "True_Misconception:Mult",
+        "True_Misconception:FlipChange"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:FlipChange"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:FlipChange"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 8003,
+      "QuestionId": 31777,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:Incomplete",
+        "False_Correct:NA",
+        "False_Misconception:Irrelevant",
+        "False_Misconception:Wrong_Fraction"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Incomplete",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Correct:NA",
+        "False_Misconception:Incomplete",
+        "False_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Correct:NA",
+        "False_Misconception:Incomplete",
+        "False_Neither:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.3333,
+      "delta": -0.6667,
+      "error": null
+    },
+    {
+      "row_id": 6199,
+      "QuestionId": 31774,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend",
+        "True_Misconception:Mult",
+        "True_Misconception:FlipChange"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Mult"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Mult"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 12364,
+      "QuestionId": 31778,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Additive",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Additive",
+        "False_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 19400,
+      "QuestionId": 32833,
+      "truth": "False_Misconception:Inversion",
+      "candidates": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication"
+      ],
+      "llm_pred": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 1588,
+      "QuestionId": 31772,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 30605,
+      "QuestionId": 89443,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking",
+        "True_Misconception:Positive"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 5982,
+      "QuestionId": 31774,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend",
+        "True_Misconception:Mult",
+        "True_Misconception:FlipChange"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Mult"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Mult"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 25407,
+      "QuestionId": 33472,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Denominator-only_change",
+        "False_Neither:NA",
+        "False_Misconception:Adding_across",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Denominator-only_change",
+        "False_Neither:NA",
+        "False_Misconception:Adding_across"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change",
+        "False_Misconception:Adding_across"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change",
+        "False_Misconception:Adding_across"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 821,
+      "QuestionId": 31772,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 12890,
+      "QuestionId": 31778,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant",
+        "True_Misconception:Additive",
+        "False_Neither:NA"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 1109,
+      "QuestionId": 31772,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 25751,
+      "QuestionId": 33472,
+      "truth": "False_Misconception:Denominator-only_change",
+      "candidates": [
+        "False_Misconception:Denominator-only_change",
+        "False_Neither:NA",
+        "False_Misconception:Adding_across",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Denominator-only_change",
+        "False_Neither:NA",
+        "False_Misconception:Adding_across"
+      ],
+      "llm_pred": [
+        "False_Misconception:Denominator-only_change",
+        "False_Neither:NA",
+        "False_Misconception:Adding_across"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Denominator-only_change",
+        "False_Neither:NA",
+        "False_Misconception:Adding_across"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 34855,
+      "QuestionId": 91695,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Misconception:Wrong_term",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Misconception:Wrong_term"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Misconception:Wrong_term"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Misconception:Wrong_term"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 25424,
+      "QuestionId": 33472,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Denominator-only_change",
+        "False_Neither:NA",
+        "False_Misconception:Adding_across",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Denominator-only_change",
+        "False_Neither:NA",
+        "False_Misconception:Adding_across"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change",
+        "False_Misconception:Adding_across"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change",
+        "False_Misconception:Adding_across"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 32996,
+      "QuestionId": 91695,
+      "truth": "False_Misconception:Wrong_term",
+      "candidates": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 34955,
+      "QuestionId": 91695,
+      "truth": "False_Misconception:Firstterm",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Misconception:Wrong_term",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Misconception:Wrong_term"
+      ],
+      "llm_pred": [
+        "False_Misconception:Firstterm",
+        "False_Neither:NA",
+        "False_Misconception:Wrong_term"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Firstterm",
+        "False_Neither:NA",
+        "False_Misconception:Wrong_term"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 31750,
+      "QuestionId": 89443,
+      "truth": "False_Misconception:Positive",
+      "candidates": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 29966,
+      "QuestionId": 89443,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Misconception:Positive"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Misconception:Positive"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Misconception:Positive"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Misconception:Positive"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 28508,
+      "QuestionId": 76870,
+      "truth": "False_Misconception:Unknowable",
+      "candidates": [
+        "False_Misconception:Unknowable",
+        "False_Neither:NA",
+        "False_Misconception:Definition",
+        "False_Correct:NA",
+        "False_Misconception:Interior"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Unknowable",
+        "False_Neither:NA",
+        "False_Misconception:Definition"
+      ],
+      "llm_pred": [
+        "False_Misconception:Unknowable",
+        "False_Neither:NA",
+        "False_Misconception:Definition"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Unknowable",
+        "False_Neither:NA",
+        "False_Misconception:Definition"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 20852,
+      "QuestionId": 32835,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger",
+        "True_Misconception:Longer_is_bigger",
+        "True_Misconception:Whole_numbers_larger"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 19463,
+      "QuestionId": 32833,
+      "truth": "False_Misconception:Inversion",
+      "candidates": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication"
+      ],
+      "llm_pred": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 33064,
+      "QuestionId": 91695,
+      "truth": "False_Misconception:Wrong_term",
+      "candidates": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 1092,
+      "QuestionId": 31772,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 13869,
+      "QuestionId": 31778,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant",
+        "True_Misconception:Additive",
+        "False_Neither:NA"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Additive"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Additive"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.5,
+      "delta": -0.5,
+      "error": null
+    },
+    {
+      "row_id": 11973,
+      "QuestionId": 31778,
+      "truth": "False_Misconception:Additive",
+      "candidates": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 19044,
+      "QuestionId": 32833,
+      "truth": "False_Misconception:Duplication",
+      "candidates": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Misconception:Inversion",
+        "False_Correct:NA",
+        "False_Misconception:Wrong_Operation"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Misconception:Inversion"
+      ],
+      "llm_pred": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Misconception:Inversion"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Duplication",
+        "False_Neither:NA",
+        "False_Misconception:Inversion"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 11800,
+      "QuestionId": 31778,
+      "truth": "False_Misconception:Additive",
+      "candidates": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 28561,
+      "QuestionId": 76870,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Definition"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Definition"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Definition"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Definition"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.5,
+      "delta": -0.5,
+      "error": null
+    },
+    {
+      "row_id": 8527,
+      "QuestionId": 31777,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Wrong_Fraction",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Wrong_Fraction",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Wrong_Fraction",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Wrong_Fraction",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 12107,
+      "QuestionId": 31778,
+      "truth": "False_Misconception:Additive",
+      "candidates": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 6670,
+      "QuestionId": 31774,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend",
+        "True_Misconception:Mult",
+        "True_Misconception:FlipChange"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Mult"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Mult"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 12380,
+      "QuestionId": 31778,
+      "truth": "False_Misconception:Additive",
+      "candidates": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 16894,
+      "QuestionId": 32833,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication",
+        "True_Misconception:Inversion"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 5716,
+      "QuestionId": 31774,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend",
+        "True_Misconception:Mult",
+        "True_Misconception:FlipChange"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Misconception:Mult",
+        "True_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Misconception:Mult",
+        "True_Correct:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.3333,
+      "delta": -0.6667,
+      "error": null
+    },
+    {
+      "row_id": 31856,
+      "QuestionId": 89443,
+      "truth": "False_Misconception:Positive",
+      "candidates": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 2966,
+      "QuestionId": 31772,
+      "truth": "False_Misconception:Incomplete",
+      "candidates": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "llm_pred": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 31238,
+      "QuestionId": 89443,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking",
+        "True_Misconception:Positive"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 26316,
+      "QuestionId": 33472,
+      "truth": "False_Misconception:Adding_across",
+      "candidates": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 2638,
+      "QuestionId": 31772,
+      "truth": "False_Misconception:WNB",
+      "candidates": [
+        "False_Misconception:WNB",
+        "False_Neither:NA",
+        "False_Misconception:Incomplete",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:WNB",
+        "False_Neither:NA",
+        "False_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "False_Misconception:WNB",
+        "False_Misconception:Incomplete",
+        "False_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:WNB",
+        "False_Misconception:Incomplete",
+        "False_Neither:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 32488,
+      "QuestionId": 91695,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Wrong_term",
+        "False_Misconception:Firstterm"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Wrong_term",
+        "False_Misconception:Firstterm"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 31515,
+      "QuestionId": 89443,
+      "truth": "False_Misconception:Positive",
+      "candidates": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 1122,
+      "QuestionId": 31772,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 21852,
+      "QuestionId": 32835,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger",
+        "True_Misconception:Longer_is_bigger",
+        "True_Misconception:Whole_numbers_larger"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 11898,
+      "QuestionId": 31778,
+      "truth": "False_Misconception:Additive",
+      "candidates": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 32719,
+      "QuestionId": 91695,
+      "truth": "False_Misconception:Wrong_term",
+      "candidates": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Wrong_term",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 24546,
+      "QuestionId": 33472,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change",
+        "True_Misconception:Incorrect_equivalent_fraction_addition",
+        "True_Misconception:Adding_across"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Adding_across"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Adding_across"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 14199,
+      "QuestionId": 31778,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant",
+        "True_Misconception:Additive",
+        "False_Neither:NA"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 34921,
+      "QuestionId": 91695,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Misconception:Wrong_term",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Misconception:Wrong_term"
+      ],
+      "llm_pred": [
+        "False_Misconception:Firstterm",
+        "False_Neither:NA",
+        "False_Misconception:Wrong_term"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Firstterm",
+        "False_Neither:NA",
+        "False_Misconception:Wrong_term"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.5,
+      "delta": -0.5,
+      "error": null
+    },
+    {
+      "row_id": 24087,
+      "QuestionId": 33472,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change",
+        "True_Misconception:Incorrect_equivalent_fraction_addition",
+        "True_Misconception:Adding_across"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 1912,
+      "QuestionId": 31772,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 23201,
+      "QuestionId": 33471,
+      "truth": "False_Misconception:Wrong_fraction",
+      "candidates": [
+        "False_Misconception:Wrong_fraction",
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Incomplete"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Wrong_fraction",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Wrong_fraction",
+        "False_Neither:NA",
+        "False_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Wrong_fraction",
+        "False_Neither:NA",
+        "False_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 28910,
+      "QuestionId": 76870,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Definition"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Definition"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Misconception:Definition",
+        "True_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Misconception:Definition",
+        "True_Correct:NA"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 2564,
+      "QuestionId": 31772,
+      "truth": "False_Misconception:WNB",
+      "candidates": [
+        "False_Misconception:WNB",
+        "False_Neither:NA",
+        "False_Misconception:Incomplete",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:WNB",
+        "False_Neither:NA",
+        "False_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "False_Misconception:WNB",
+        "False_Neither:NA",
+        "False_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:WNB",
+        "False_Neither:NA",
+        "False_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 16822,
+      "QuestionId": 32833,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication",
+        "True_Misconception:Inversion"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 4989,
+      "QuestionId": 31774,
+      "truth": "False_Misconception:Mult",
+      "candidates": [
+        "False_Misconception:Mult",
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend",
+        "False_Misconception:FlipChange",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Mult",
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "False_Misconception:Mult",
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Mult",
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 34301,
+      "QuestionId": 91695,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 3326,
+      "QuestionId": 31772,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Incomplete",
+        "False_Misconception:WNB"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Incomplete",
+        "False_Misconception:WNB"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 7587,
+      "QuestionId": 31774,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend",
+        "False_Misconception:FlipChange",
+        "False_Misconception:Mult",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend",
+        "False_Misconception:FlipChange"
+      ],
+      "llm_pred": [
+        "False_Misconception:SwapDividend",
+        "False_Neither:NA",
+        "False_Misconception:FlipChange"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:SwapDividend",
+        "False_Neither:NA",
+        "False_Misconception:FlipChange"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.5,
+      "delta": -0.5,
+      "error": null
+    },
+    {
+      "row_id": 12419,
+      "QuestionId": 31778,
+      "truth": "False_Misconception:Additive",
+      "candidates": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 16939,
+      "QuestionId": 32833,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication",
+        "True_Misconception:Inversion"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Duplication"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 5803,
+      "QuestionId": 31774,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend",
+        "True_Misconception:Mult",
+        "True_Misconception:FlipChange"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Mult"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Mult"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 24223,
+      "QuestionId": 33472,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change",
+        "True_Misconception:Incorrect_equivalent_fraction_addition",
+        "True_Misconception:Adding_across"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Adding_across"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Adding_across"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 4807,
+      "QuestionId": 31772,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "llm_pred": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 11895,
+      "QuestionId": 31778,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Additive",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Additive",
+        "False_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 20773,
+      "QuestionId": 32835,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger",
+        "True_Misconception:Longer_is_bigger",
+        "True_Misconception:Whole_numbers_larger"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 1247,
+      "QuestionId": 31772,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete",
+        "True_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 34074,
+      "QuestionId": 91695,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 21539,
+      "QuestionId": 32835,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger",
+        "True_Misconception:Longer_is_bigger",
+        "True_Misconception:Whole_numbers_larger"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Shorter_is_bigger"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 19860,
+      "QuestionId": 32835,
+      "truth": "False_Misconception:Whole_numbers_larger",
+      "candidates": [
+        "False_Misconception:Whole_numbers_larger",
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Shorter_is_bigger",
+        "False_Misconception:Longer_is_bigger",
+        "False_Misconception:Ignores_zeroes"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Whole_numbers_larger",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Whole_numbers_larger",
+        "False_Misconception:Shorter_is_bigger",
+        "False_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Whole_numbers_larger",
+        "False_Misconception:Shorter_is_bigger",
+        "False_Neither:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 11647,
+      "QuestionId": 31778,
+      "truth": "False_Misconception:Additive",
+      "candidates": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 23251,
+      "QuestionId": 33471,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Wrong_fraction",
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Incomplete"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Wrong_fraction",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Wrong_fraction",
+        "False_Misconception:Incomplete"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Wrong_fraction",
+        "False_Misconception:Incomplete"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 26094,
+      "QuestionId": 33472,
+      "truth": "False_Misconception:Adding_across",
+      "candidates": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Adding_across",
+        "False_Neither:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 27457,
+      "QuestionId": 33474,
+      "truth": "False_Misconception:Subtraction",
+      "candidates": [
+        "False_Misconception:Subtraction",
+        "False_Neither:NA",
+        "False_Misconception:Division",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Subtraction",
+        "False_Neither:NA",
+        "False_Misconception:Division"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Subtraction",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Subtraction",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.5,
+      "delta": -0.5,
+      "error": null
+    },
+    {
+      "row_id": 31704,
+      "QuestionId": 89443,
+      "truth": "False_Misconception:Positive",
+      "candidates": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 25319,
+      "QuestionId": 33472,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Denominator-only_change",
+        "False_Misconception:Incorrect_equivalent_fraction_addition"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Incorrect_equivalent_fraction_addition"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Incorrect_equivalent_fraction_addition"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 31527,
+      "QuestionId": 89443,
+      "truth": "False_Misconception:Positive",
+      "candidates": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 7634,
+      "QuestionId": 31774,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend",
+        "False_Misconception:FlipChange",
+        "False_Misconception:Mult",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend",
+        "False_Misconception:FlipChange"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend",
+        "False_Misconception:FlipChange"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend",
+        "False_Misconception:FlipChange"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 33559,
+      "QuestionId": 91695,
+      "truth": "True_Misconception:Wrong_term",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "True_Misconception:Wrong_term",
+        "True_Neither:NA",
+        "True_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Misconception:Wrong_term",
+        "True_Neither:NA",
+        "True_Correct:NA"
+      ],
+      "baseline_C_ap": 0.0,
+      "llm_ap": 1.0,
+      "delta": 1.0,
+      "error": null
+    },
+    {
+      "row_id": 34965,
+      "QuestionId": 91695,
+      "truth": "False_Misconception:Firstterm",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Misconception:Wrong_term",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Firstterm",
+        "False_Misconception:Wrong_term"
+      ],
+      "llm_pred": [
+        "False_Misconception:Firstterm",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Firstterm",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 31987,
+      "QuestionId": 89443,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Positive",
+        "False_Neither:NA",
+        "False_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "False_Correct:NA",
+        "False_Misconception:Positive",
+        "False_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Correct:NA",
+        "False_Misconception:Positive",
+        "False_Neither:NA"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.3333,
+      "delta": -0.1667,
+      "error": null
+    },
+    {
+      "row_id": 11274,
+      "QuestionId": 31778,
+      "truth": "False_Misconception:Irrelevant",
+      "candidates": [
+        "False_Misconception:Irrelevant",
+        "False_Neither:NA",
+        "False_Correct:NA",
+        "False_Misconception:Additive",
+        "False_Misconception:WNB"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Irrelevant",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Irrelevant",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Irrelevant",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 30294,
+      "QuestionId": 89443,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking",
+        "True_Misconception:Positive"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 33940,
+      "QuestionId": 91695,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 30447,
+      "QuestionId": 89443,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking",
+        "True_Misconception:Positive"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Tacking"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Misconception:Positive",
+        "True_Misconception:Tacking"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Misconception:Positive",
+        "True_Misconception:Tacking"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.0,
+      "delta": -1.0,
+      "error": null
+    },
+    {
+      "row_id": 5087,
+      "QuestionId": 31774,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Misconception:Mult",
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend",
+        "False_Misconception:FlipChange",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Mult",
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "False_Misconception:Mult",
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Mult",
+        "False_Neither:NA",
+        "False_Misconception:SwapDividend"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 33292,
+      "QuestionId": 91695,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Firstterm"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Wrong_term"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 20243,
+      "QuestionId": 32835,
+      "truth": "False_Neither:NA",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:Ignores_zeroes",
+        "False_Correct:NA",
+        "False_Misconception:Longer_is_bigger",
+        "False_Misconception:Shorter_is_bigger"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Ignores_zeroes",
+        "False_Correct:NA"
+      ],
+      "llm_pred": [
+        "False_Misconception:Ignores_zeroes",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Ignores_zeroes",
+        "False_Neither:NA",
+        "False_Correct:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.5,
+      "delta": -0.5,
+      "error": null
+    },
+    {
+      "row_id": 4414,
+      "QuestionId": 31772,
+      "truth": "False_Misconception:Incomplete",
+      "candidates": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "llm_pred": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Incomplete",
+        "False_Neither:NA",
+        "False_Misconception:WNB"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 36639,
+      "QuestionId": 109465,
+      "truth": "False_Misconception:Scale",
+      "candidates": [
+        "False_Neither:NA",
+        "False_Misconception:Scale",
+        "False_Misconception:Certainty"
+      ],
+      "baseline_C_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Scale",
+        "False_Misconception:Certainty"
+      ],
+      "llm_pred": [
+        "False_Neither:NA",
+        "False_Misconception:Scale",
+        "False_Misconception:Certainty"
+      ],
+      "llm_raw_ranking": [
+        "False_Neither:NA",
+        "False_Misconception:Scale",
+        "False_Misconception:Certainty"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 0.5,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 23779,
+      "QuestionId": 33472,
+      "truth": "True_Neither:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change",
+        "True_Misconception:Incorrect_equivalent_fraction_addition",
+        "True_Misconception:Adding_across"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:Denominator-only_change"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Misconception:Adding_across",
+        "True_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Misconception:Adding_across",
+        "True_Correct:NA"
+      ],
+      "baseline_C_ap": 0.5,
+      "llm_ap": 1.0,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 19597,
+      "QuestionId": 32833,
+      "truth": "False_Misconception:Inversion",
+      "candidates": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication"
+      ],
+      "llm_pred": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Inversion",
+        "False_Neither:NA",
+        "False_Misconception:Duplication"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 7423,
+      "QuestionId": 31774,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend",
+        "True_Misconception:Mult",
+        "True_Misconception:FlipChange"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Mult"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Correct:NA",
+        "True_Misconception:Mult"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 0.5,
+      "delta": -0.5,
+      "error": null
+    },
+    {
+      "row_id": 11613,
+      "QuestionId": 31778,
+      "truth": "False_Misconception:Additive",
+      "candidates": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_pred": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Additive",
+        "False_Neither:NA",
+        "False_Misconception:Irrelevant"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 25510,
+      "QuestionId": 33472,
+      "truth": "False_Misconception:Denominator-only_change",
+      "candidates": [
+        "False_Misconception:Denominator-only_change",
+        "False_Neither:NA",
+        "False_Misconception:Adding_across",
+        "False_Correct:NA"
+      ],
+      "baseline_C_pred": [
+        "False_Misconception:Denominator-only_change",
+        "False_Neither:NA",
+        "False_Misconception:Adding_across"
+      ],
+      "llm_pred": [
+        "False_Misconception:Denominator-only_change",
+        "False_Misconception:Adding_across",
+        "False_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "False_Misconception:Denominator-only_change",
+        "False_Misconception:Adding_across",
+        "False_Neither:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    },
+    {
+      "row_id": 6147,
+      "QuestionId": 31774,
+      "truth": "True_Misconception:Mult",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend",
+        "True_Misconception:Mult",
+        "True_Misconception:FlipChange"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA",
+        "True_Misconception:SwapDividend"
+      ],
+      "llm_pred": [
+        "True_Neither:NA",
+        "True_Misconception:Mult",
+        "True_Correct:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Neither:NA",
+        "True_Misconception:Mult",
+        "True_Correct:NA"
+      ],
+      "baseline_C_ap": 0.0,
+      "llm_ap": 0.5,
+      "delta": 0.5,
+      "error": null
+    },
+    {
+      "row_id": 35895,
+      "QuestionId": 109465,
+      "truth": "True_Correct:NA",
+      "candidates": [
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "baseline_C_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "llm_pred": [
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "llm_raw_ranking": [
+        "True_Correct:NA",
+        "True_Neither:NA"
+      ],
+      "baseline_C_ap": 1.0,
+      "llm_ap": 1.0,
+      "delta": 0.0,
+      "error": null
+    }
+  ]
+}

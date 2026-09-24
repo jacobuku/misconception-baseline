@@ -1,0 +1,63 @@
+{
+  "config": {
+    "data": "data/train.csv",
+    "n_rows": 36696,
+    "n_classes": 65,
+    "n_splits": 5,
+    "seed": 42,
+    "stratify_on": "Category:Misconception",
+    "metric": "MAP@3",
+    "features_used": [
+      "QuestionId",
+      "MC_Answer"
+    ],
+    "features_forbidden": [
+      "StudentExplanation"
+    ],
+    "api_calls": 0
+  },
+  "baselines": {
+    "A_global": {
+      "description": "3 globally most common Category:Misconception combos",
+      "fold_scores": [
+        0.540327,
+        0.540401,
+        0.540264,
+        0.540332,
+        0.540332
+      ],
+      "mean": 0.540331,
+      "std": 4.3e-05,
+      "top1_acc_mean": 0.403368,
+      "top3_hit_rate_mean": 0.72512
+    },
+    "B_question": {
+      "description": "3 most common combos within the row's QuestionId",
+      "fold_scores": [
+        0.584718,
+        0.587501,
+        0.582686,
+        0.583594,
+        0.583186
+      ],
+      "mean": 0.584337,
+      "std": 0.001718,
+      "top1_acc_mean": 0.420237,
+      "top3_hit_rate_mean": 0.799488
+    },
+    "C_question_answer": {
+      "description": "3 most common combos within (QuestionId, MC_Answer), padded from the question's top combos",
+      "fold_scores": [
+        0.839124,
+        0.8406,
+        0.840555,
+        0.838716,
+        0.837512
+      ],
+      "mean": 0.839301,
+      "std": 0.001169,
+      "top1_acc_mean": 0.696479,
+      "top3_hit_rate_mean": 0.990135
+    }
+  }
+}
